@@ -20,14 +20,14 @@
         <input type="text">
         <input id="day_night" type="button" value="day" onclick="
             var body=document.querySelector('body');
-            if(document.querySelector('#day_night').value ==='night'){
+            if(this.value ==='night'){
             body.style.backgroundColor = 'white';
             body.style.color = 'black';
-            document.querySelector('#day_night').value = 'day'
+            this.value = 'day'
             } else {
             body.style.backgroundColor = 'black';
             body.style.color = 'white';
-            document.querySelector('#day_night').value = 'night'
+            this.value = 'night'
             }
         ">      
         <h2>JavaScript</h2>
