@@ -1,0 +1,23 @@
+body{
+    margin:0px;
+}
+h1 {
+    border-bottom:10px solid royalblue;
+    padding:10px;
+    margin-bottom:0px;
+}
+ol {
+    border-right:10px solid pink;
+    /* width:30%; */
+    margin-top:0px;
+}
+#container{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+h2 {
+    margin:0px;
+}
+iframe{
+    display:block;
+}

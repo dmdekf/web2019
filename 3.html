@@ -4,7 +4,7 @@
 <head>
     <title>WEB - JavaScript</title>
     <meta charset="utf8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,20 +16,48 @@
         <li><a href="3.html">javascript</a></li>
         <li><a href="4.html">Node.js</a></li>
     </ol>
-    <div>
-        <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';    
-        ">
-                
+    <div> 
+        <input type="text">
+        <input id="day_night" type="button" value="day" onclick="
+            var body=document.querySelector('body');
+            if(document.querySelector('#day_night').value ==='night'){
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+            document.querySelector('#day_night').value = 'day'
+            } else {
+            body.style.backgroundColor = 'black';
+            body.style.color = 'white';
+            document.querySelector('#day_night').value = 'night'
+            }
+        ">      
         <h2>JavaScript</h2>
         JavaScript is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, veniam.
     </div>
 </div>
-<script>
-    
-</script>
-    <img  width="100%" src="https://source.unsplash.com/500x250/?cat,dog">
+    <img  width="100%" src="https://source.unsplash.com/500x250/?cat">
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        </div>
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web2019.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 
 </html>
