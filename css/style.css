@@ -1,5 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display'); */
 body{
     margin:0px;
+    font-family: 'Major Mono Display', monospace;
 }
 h1 {
     border-bottom:10px solid royalblue;
