@@ -18,30 +18,41 @@
         <li><a href="4.html">Node.js</a></li>
     </ol>
     <div> 
+        <script>
+            function toDay(){
+                var self = document.querySelector('#day_night');
+                var body=document.querySelector('body');
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+                self.value = 'night';
+                var list_a = document.querySelectorAll('a');
+                var i = 0;
+                while(i < list_a.length ){
+                list_a[i].style.color = 'pink';
+                i = i + 1;
+            }
+            }
+            function toNight(){
+                var self = document.querySelector('#day_night');
+                var body=document.querySelector('body');
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+                self.value = 'day';
+                var list_a = document.querySelectorAll('a');
+                var i = 0;
+                while(i < list_a.length ){
+                list_a[i].style.color = 'royalblue';
+                i = i + 1;
+            }
+            }
+        </script>
         <input type="text">
         <input id="day_night" type="button" value="night" onclick="
             var body=document.querySelector('body');
             if(this.value ==='day'){
-            body.style.backgroundColor = 'white';
-            body.style.color = 'black';
-            this.value = 'night';
-            var list_a = document.querySelectorAll('a');
-            var i = 0;
-            while(i < list_a.length ){
-                list_a[i].style.color = 'pink';
-                i = i + 1;
-            }
+                toDay();
             } else {
-            body.style.backgroundColor = 'black';
-            body.style.color = 'white';
-            document.querySelectorAll('a').color = 'white';
-            this.value = 'day';
-            var list_a = document.querySelectorAll('a');
-            var i = 0;
-            while(i < list_a.length ){
-                list_a[i].style.color = 'royalblue';
-                i = i + 1;
-            }
+                toNight();
             }
         ">      
         <h2>JavaScript</h2>
