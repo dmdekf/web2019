@@ -5,6 +5,7 @@
     <title>WEB - JavaScript</title>
     <meta charset="utf8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
 </head>
 
 <body>
@@ -23,11 +24,24 @@
             if(this.value ==='night'){
             body.style.backgroundColor = 'white';
             body.style.color = 'black';
-            this.value = 'day'
+            this.value = 'day';
+            var list_a = document.querySelectorAll('a');
+            var i = 0;
+            while(i < list_a.length ){
+                list_a[i].style.color = 'pink';
+                i = i + 1;
+            }
             } else {
             body.style.backgroundColor = 'black';
             body.style.color = 'white';
-            this.value = 'night'
+            document.querySelectorAll('a').color = 'white';
+            this.value = 'night';
+            var list_a = document.querySelectorAll('a');
+            var i = 0;
+            while(i < list_a.length ){
+                list_a[i].style.color = 'magenta';
+                i = i + 1;
+            }
             }
         ">      
         <h2>JavaScript</h2>
