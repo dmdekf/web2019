@@ -6,9 +6,23 @@
     <body>
         <h1>Array</h1>
         <script>
-        
+            var number = ['1','2','3','4','5'];
+            document.write(number[0]+'<br>');
+            document.write(number.length+'<br>');
+            number.push('100');
+            document.write(number);
+
         </script>
 
+        <h1>Array + Loop</h1>
+        <script>
+            var number = ['1','2','3','4','5','100'];
+            var n = 0;
+            while(n < number.length){
+                document.write('<li>'+number[n]+'</li>');
+                n = n + 1;
+            }
+        </script>
         <h1>Loop</h1>
         <script>
             document.write('1<br>');
@@ -17,7 +31,7 @@
                 document.write('2<br>');
                 document.write('3<br>');
                 i = i + 1;
-                document.write('n='i);
+                // document.write('n='+i+'<br>');
             }
             document.write('4<br>');
         </script>
