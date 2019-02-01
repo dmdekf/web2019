@@ -19,12 +19,12 @@
     </ol>
     <div> 
         <input type="text">
-        <input id="day_night" type="button" value="day" onclick="
+        <input id="day_night" type="button" value="night" onclick="
             var body=document.querySelector('body');
-            if(this.value ==='night'){
+            if(this.value ==='day'){
             body.style.backgroundColor = 'white';
             body.style.color = 'black';
-            this.value = 'day';
+            this.value = 'night';
             var list_a = document.querySelectorAll('a');
             var i = 0;
             while(i < list_a.length ){
@@ -35,11 +35,11 @@
             body.style.backgroundColor = 'black';
             body.style.color = 'white';
             document.querySelectorAll('a').color = 'white';
-            this.value = 'night';
+            this.value = 'day';
             var list_a = document.querySelectorAll('a');
             var i = 0;
             while(i < list_a.length ){
-                list_a[i].style.color = 'magenta';
+                list_a[i].style.color = 'royalblue';
                 i = i + 1;
             }
             }
